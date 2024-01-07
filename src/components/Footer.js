@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Row,Col } from 'react-bootstrap';
 import './style.css';
-import {Instagram,Twitter,Facebook,LinkedIn} from '@mui/icons-material';
+import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone} from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
@@ -10,92 +12,102 @@ export default function Footer() {
             <section id="details">
             <div class="blocks">
                 <div class="detail-col">
-                    <h3>Company</h3>
-                    <div class="detail-data">
-                        <a href="">About</a>
+                <h4 style={{color:"gray"}}>Company</h4>
+                    <div className='footer-link'>
+                        <Link to={'/about'} className="btn">
+                            About
+                        </Link>
                     </div>
-                    <div class="detail-data">
-                        <a href="">Careers</a>
+                        <Link to={'/careerPage'} className="btn">
+                            Career Page
+                        </Link>
+                    <div className='footer-link'>
+                        <Link to={'/newCustomer'} className='btn'>
+                            Meet the Founders
+                        </Link>
                     </div>
-                    <div class="detail-data">
-                        <a href="">Locations</a>
+                    <div className='footer-link'>
+                        <Link to={'/OurFleet'} className='btn'>
+                            Our Fleet
+                        </Link>
                     </div>
-                    <div class="detail-data">
-                        <a href="">Patners</a> 
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Blog</a>
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Newsroom</a>
-                    </div>
+                  
                 </div>
                 <div class="detail-col">
-                    <h3>Service and Support</h3>
-                    <div class="detail-data">
-                        <a href="">Services</a> 
+                <h4 style={{color:"gray"}}>Service and Support</h4>
+                    <div className='footer-link'>
+                        <Link to={'/services'} className='btn'>
+                            Services
+                        </Link> 
                     </div>
-                    <div class="detail-data">
-                        <a href="">Support Portal</a> 
+                    <div className='footer-link'>
+                        <Link to={'/contact'} className="btn">
+                            Support Portal
+                        </Link>                    
                     </div>
+
+                </div>
+                <div class="detail-col">
+                <h4 style={{color:"gray"}}>My Account</h4>
+                    <div className='footer-link'>
+                       <Link to={'/login'} className='btn'>
+                            Log in
+                        </Link> 
+                    </div>
+                    <div className='footer-link'>
+                        <Link to={'/newCustomer'} className='btn'>
+                            Sign Up
+                        </Link>
+                    </div>        
+                    
                 </div>
 
-                <div class="detail-col">
-                    <h3>Resources</h3>
-                    <div class="detail-data">
-                        <a href="">User Community</a> 
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Training and Certification</a> 
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Product documentation</a> 
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Developer Portal</a> 
-                    </div>
+                <div class="detail-col" >
+                    <h4 style={{color:"gray"}}>Contact Us</h4>
+                        <div className='footer-link'>
+                             <p style={{color:"white",fontSize:"12px"}}><LocationOn fontSize='medium'/>2505 Panola Rd, Suite B, Lithonia, GA 30058</p>
+                        </div>
+
+                        <div className='footer-link' style={{margin:"10px 0"}}>
+                            <p style={{color:"white",fontSize:"12px"}}><Phone fontSize='small'/> +234 704 080 0644</p>
+                        </div>   
+
+                    <div className='footer-link'>
+                        <Link to={'/newCustomer'} className='btn'>
+                            Sign Up
+                        </Link>
+                    </div>        
+                    
                 </div>
-                <div class="detail-col">
-                    <h3>My Account</h3>
-                    <div class="detail-data">
-                        <a href="">Sign In</a> 
-                    </div>
-                    <div class="detail-data">
-                        <a href="">Register</a> 
-                    </div>
-                </div>
-                
-                
+            
             </div>
             
         </section>
 
     </Row>
     
-    <Row style={{margin:"20px"}}>
+    <Row style={{margin:"5px 0px 0px 0px"}}>
+      
         <Row>
-            <h4>Follow us</h4>
-        </Row>
-        <Row>
+            
             <Col>
-                <a href='instagram.com'>
-                    <Twitter fontSize="large" className='contact-us-logos'/>
+                
+                <a style={{marginLeft:'9px'}}href='https://www.x.com' target="_blank" rel="noopener noreferrer"b>
+                    <Twitter fontSize="medium" className='contact-us-logos'/>
                 </a>
-            </Col>
-            <Col>
-                <a href='facebook.com'>
-                    <Facebook fontSize="large" className='contact-us-logos'/>
+          
+                <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
+                    <Facebook fontSize="medium" className='contact-us-logos'/>
                 </a>
-            </Col>
-            <Col>
-                <a href='instagram.com'>
-                    <Instagram fontSize="large" className='contact-us-logos'/>
+           
+                <a href='https://www.instagram.com' target="_blank" rel="noopener noreferrer">
+                    <Instagram fontSize="medium" className='contact-us-logos'/>
                 </a>
-            </Col>
-            <Col>
-                <a href='linkedin.com'>
-                    <LinkedIn fontSize="large" className='contact-us-logos'/>
+
+                <a href='https://www.linkedin.com' target="_blank" rel="noopener noreferrer">
+                    <LinkedIn fontSize="medium" className='contact-us-logos'/>
                 </a>
+
             </Col>
         </Row>
         

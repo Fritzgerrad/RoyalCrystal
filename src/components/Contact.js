@@ -8,7 +8,7 @@ export default function Contact() {
     <div>
         <AppBar />
         <section id="main-content" style={{marginTop:"20px"}}>
-            <h2>Contact Us</h2>
+            <h1 style={{fontWeight:'bold'}}>Contact Us</h1>
             <p>Have questions or need more information? Feel free to reach out to us.</p>
             <form action="submit_form.php" method="post">
                 <input type="text" name="name" placeholder="Your Name" required />

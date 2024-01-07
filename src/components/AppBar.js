@@ -24,17 +24,17 @@ function AppBar() {
             </div>
             <div className="left-btn">
                 <Link to={'/login'} className="btn">
-                LOG IN
+                    LOG IN
                 </Link>
             </div>
             <div className="left-btn">
                 <Link to={'/newCustomer'} className="btn" id="sign-up">
-                Sign Up
+                    Sign Up
                 </Link>
             </div>
             <div className="left-btn">
-                <Link to={'/contact'} className="btn">
-                Contact Us
+                <Link to={'/careerPage'} className="btn">
+                    Careers
                 </Link>
             </div>
           

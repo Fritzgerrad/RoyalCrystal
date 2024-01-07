@@ -6,6 +6,9 @@ import Contact from "./components/Contact";
 import NewCustomer from "./components/NewCustomer";
 import NewStaff from "./components/NewStaff";
 import Login from "./components/Login";
+import Services from "./components/Services";
+import Career from "./components/Careers";
+import OurFleet from "./components/OurFleet";
 export default function MyRoutes() {
     return (
         <div>
@@ -34,6 +37,18 @@ export default function MyRoutes() {
             <Route 
             path="/login"
             element={<Login />}
+            />
+            <Route 
+            path='/careerPage'
+            element={<Career />}
+            />
+            <Route 
+            path="services"
+            element={<Services />}
+            />
+            <Route
+            path='ourFleet'
+            element={<OurFleet />}
             />
           </Routes>
         </Router>
