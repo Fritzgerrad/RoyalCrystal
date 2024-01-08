@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <div>
+    <div className='floor'>
         <Row>
             <section id="details">
             <div class="blocks">
                 <div class="detail-col">
-                <h4 style={{color:"gray"}}>Company</h4>
+                <h4 style={{color:"white"}}>Company</h4>
                     <div className='footer-link'>
                         <Link to={'/about'} className="btn">
                             About
@@ -34,21 +34,7 @@ export default function Footer() {
                   
                 </div>
                 <div class="detail-col">
-                <h4 style={{color:"gray"}}>Service and Support</h4>
-                    <div className='footer-link'>
-                        <Link to={'/services'} className='btn'>
-                            Services
-                        </Link> 
-                    </div>
-                    <div className='footer-link'>
-                        <Link to={'/contact'} className="btn">
-                            Support Portal
-                        </Link>                    
-                    </div>
-
-                </div>
-                <div class="detail-col">
-                <h4 style={{color:"gray"}}>My Account</h4>
+                <h4 style={{color:"white"}}>My Account</h4>
                     <div className='footer-link'>
                        <Link to={'/login'} className='btn'>
                             Log in
@@ -63,20 +49,14 @@ export default function Footer() {
                 </div>
 
                 <div class="detail-col" >
-                    <h4 style={{color:"gray"}}>Contact Us</h4>
+                    <h4 style={{color:"white"}}>Contact Us</h4>
                         <div className='footer-link'>
                              <p style={{color:"white",fontSize:"12px"}}><LocationOn fontSize='medium'/>2505 Panola Rd, Suite B, Lithonia, GA 30058</p>
                         </div>
 
                         <div className='footer-link' style={{margin:"10px 0"}}>
                             <p style={{color:"white",fontSize:"12px"}}><Phone fontSize='small'/> +234 704 080 0644</p>
-                        </div>   
-
-                    <div className='footer-link'>
-                        <Link to={'/newCustomer'} className='btn'>
-                            Sign Up
-                        </Link>
-                    </div>        
+                        </div>         
                     
                 </div>
             
@@ -85,7 +65,7 @@ export default function Footer() {
         </section>
 
     </Row>
-    
+    <div >
     <Row style={{margin:"5px 0px 0px 0px"}}>
       
         <Row>
@@ -122,6 +102,7 @@ export default function Footer() {
 
         </div>
     </Row>
+    </div>
       
     </div>
   )

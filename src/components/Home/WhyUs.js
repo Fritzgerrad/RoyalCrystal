@@ -21,7 +21,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                 <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={businessMan} style={{height:'95px',width:'90px',margin:'8px'}}/>
+                            <Image src={businessMan} style={{height:'48px',width:'48px',margin:'8px'}}/>
                             <Card.Title>Trusted Professionals</Card.Title>
                             <Card.Text>
                             Our drivers undergo rigorous training to handle diverse medical transportation needs. With a focus on safety, empathy, and professionalism, our team ensures a smooth and secure journey for all passengers.
@@ -32,7 +32,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                 <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={ambulanceSilhoutte} style={{height:'100px',width:'130px'}}/>
+                            <Image src={ambulanceSilhoutte} style={{height:'50px',width:'65px',margin:'9px'}}/>
                             <Card.Title>High Quality Vehicles</Card.Title>
                             <Card.Text>
                             Our fleet is meticulously maintained to the highest standards, ensuring a safe and comfortable journey for every passenger. From routine maintenance to cleanliness, we prioritize the well-being of our riders.
@@ -44,7 +44,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                 <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={punctualSilhouette} style={{height:'100px',width:'130px'}}/>
+                            <Image src={punctualSilhouette} style={{height:'50px',width:'55px',margin:'10px'}}/>
                             <Card.Title>Reliable and Punctual</Card.Title>
                             <Card.Text>
                             Time is of the essence when it comes to medical appointments. Count on us for prompt and dependable transportation. Our commitment to punctuality ensures that our riders reach their destinations on schedule.</Card.Text>
@@ -54,7 +54,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                     <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={affordabilitySilhouette} style={{height:'75px',width:'130px',margin:'15px 0'}}/>
+                            <Image src={affordabilitySilhouette} style={{height:'37px',width:'50px',margin:'16px 9px'}}/>
                             <Card.Title>Affordable Solutions</Card.Title>
                             <Card.Text>
                             We believe in accessibility. Our pricing structure is designed to provide cost-effective transportation options without compromising the quality of service. At Royal  Crystal NEMT, affordability meets excellence.
@@ -67,7 +67,7 @@ export default function WhyUs() {
             <Col className='whyUsCard'>
                 <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={careSilhouette} style={{height:'100px',width:'100px'}}/>
+                            <Image src={careSilhouette} style={{height:'50px',width:'50px',margin:'7px'}}/>
                             <Card.Title>Genuine Care</Card.Title>
                             <Card.Text>
                             Beyond providing transportation, we prioritize the well-being of our passengers. Our staff are compassionate individuals who genuinely care about the comfort and safety of those they transport.
@@ -79,7 +79,7 @@ export default function WhyUs() {
 
                 <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={safetySilhouette} style={{height:'90px',width:'90px',margin:'8px'}}/>
+                            <Image src={safetySilhouette} style={{height:'45px',width:'45px',margin:'8px'}}/>
                             <Card.Title>Safety and Security</Card.Title>
                             <Card.Text>
                             Our vehicles adhere to strict safety standards, providing a secure environment for individuals with health concerns during transit.
@@ -91,7 +91,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                     <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                             <Card.Body>
-                                <Image src={comfortSilhouette} style={{height:'100px',width:'130px'}}/>
+                                <Image src={comfortSilhouette} style={{height:'50px',width:'65px',margin:'6px'}}/>
                                 <Card.Title>Comfort</Card.Title>
                                 <Card.Text>
                                 Our vehicles are designed to accommodate various medical needs, offering a more comfortable and accommodating space than traditional transportation.
@@ -102,7 +102,7 @@ export default function WhyUs() {
                 <Col className='whyUsCard'>
                     <Card border="info" style={{ width: '18rem',height:'23rem' }}>
                         <Card.Body>
-                            <Image src={licensedSilhouette} style={{height:'105px',width:'130px'}}/>
+                            <Image src={licensedSilhouette} style={{height:'52px',width:'65px',margin:'7px'}}/>
                             <Card.Title>Fully Licensed</Card.Title>
                             <Card.Text>
                             After successfully meeting all performance and quality assurance standards set by regulatory bodies, we have obtained full licensing and accreditation, ensuring our capability to deliver top-notch services.

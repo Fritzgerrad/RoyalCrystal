@@ -17,7 +17,6 @@
     height:fit-content;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
-
 }
 
 .Strong p{
@@ -195,6 +194,7 @@ body {
     padding-left: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #080324;
+    background-color:#4c88c9;
     color: #fff;
     padding: 10px;
 }
@@ -225,7 +225,6 @@ body {
     font-family:cursive;
 }
 
-
 .how-we-help .blocks{
     display: flex;
     margin: 10px;
@@ -235,7 +234,6 @@ body {
 
 .how-we-help .blocks p{  
     font-size: 1.3em;
-
 }
 
 #pricing {
@@ -253,7 +251,6 @@ body {
     width: 10cm;
     background-color: #080324;
     color: #fff;
-
 }
 
 .plan h3 {
@@ -279,7 +276,6 @@ body {
     padding-left: 15%;
     padding: 10px;
     color: #fff;
-    
 }
 
 .plan ul li {
@@ -288,7 +284,6 @@ body {
     margin-right: 10px;
     padding: 7px;
     color: #fff;
-
 }
 
 #contact {
@@ -336,13 +331,22 @@ form button:hover {
     padding-right: 50px;
     text-align: left;
     background-color: #080324;
-    background-color: #000000;
+    background-color: gray;
     color: #fff;
 
 }
 
 #details h3{
-    color: #fff;
+    color: #080324;
+}
+
+#details a{
+    color: white;
+    padding-left: 0px;
+}
+
+#details a:hover{
+    color: blue;
 }
 
 .detail-col{
@@ -384,7 +388,6 @@ footer {
     margin: 0 10px;
 }
 
-
 footer a{
     text-decoration: none;
     color: #000;
@@ -402,16 +405,19 @@ footer a:hover{
     margin: 10px;
 }
 
+.floor{
+    background-color: #f8f8f818;
+}
+
 .final-links p{
     font-size: 12px;
     margin-left: auto;
-
 }
 
 .final-links a{
     text-decoration: none;
     padding: 10px 10px 0 10px;
-    color:black;
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
 }
@@ -422,12 +428,10 @@ footer a:hover{
 }
 
 .whyUsCard{
-    /* width: 18rem;
-    height: 23rem; */
-    margin: 
-    40px 0;
+    margin: 40px 0;
 }
 
 .footer-link{
     color:#f9f9f9
 }
+
