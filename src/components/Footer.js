@@ -3,15 +3,14 @@ import { Row,Col } from 'react-bootstrap';
 import './style.css';
 import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone} from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-
+import { Image } from 'react-bootstrap-icons';
+import { GooglePlay,Apple } from 'react-bootstrap-icons';
 
 export default function Footer() {
   return (
     <div className='floor'>
-        <Row>
-            <section id="details">
-            <div class="blocks">
-                <div class="detail-col">
+        <Row id="details">
+                <Col class="detail-col">
                 <h4 style={{color:"white"}}>Company</h4>
                     <div className='footer-link'>
                         <Link to={'/about'} className="btn">
@@ -32,8 +31,8 @@ export default function Footer() {
                         </Link>
                     </div>
                   
-                </div>
-                <div class="detail-col">
+                </Col>
+                <Col class="detail-col">
                 <h4 style={{color:"white"}}>My Account</h4>
                     <div className='footer-link'>
                        <Link to={'/login'} className='btn'>
@@ -46,9 +45,9 @@ export default function Footer() {
                         </Link>
                     </div>        
                     
-                </div>
+                </Col>
 
-                <div class="detail-col" >
+                <Col class="detail-col" >
                     <h4 style={{color:"white"}}>Contact Us</h4>
                         <div className='footer-link'>
                              <p style={{color:"white",fontSize:"12px"}}><LocationOn fontSize='medium'/>2505 Panola Rd, Suite B, Lithonia, GA 30058</p>
@@ -58,12 +57,21 @@ export default function Footer() {
                             <p style={{color:"white",fontSize:"12px"}}><Phone fontSize='small'/> +234 704 080 0644</p>
                         </div>         
                     
-                </div>
-            
-            </div>
-            
-        </section>
+                </Col>
+                <Col>
+                    <h4>Download the App</h4>
+                    <a href='https://play.google.com/store/games?pli=1' >
+                        <div className='download-app'> 
+                        <GooglePlay fontSize='50px'/> Get it from Google PlayStore
+                        </div>
+                        </a><br />
+                    <a href='https://play.google.com/store/games?pli=1'>
+                    <div className='download-app'> 
+                        <Apple fontSize='50px'/> Get it from Apple Store
+                        </div>
+                        </a>
 
+                </Col>
     </Row>
     <div >
     <Row style={{margin:"5px 0px 0px 0px"}}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image} from 'react-bootstrap';
-import mainLogo from '../../Assets/images/logo.png'
+// import mainLogo from '../../Assets/images/logo.png'
 import nemtDriver from '../../Assets/images/nemtdriver.jpeg'
 export default function Intro() {
   return (
@@ -8,7 +8,7 @@ export default function Intro() {
         <section id="intro" class="blocks" className="intro" style={{marginTop: "30px;"}}>
         <div class="blocks">
             <div>
-                <Image src={nemtDriver} style={{height:"400px",width:'500px'}}/>
+                <Image src={nemtDriver} style={{height:"auto",width:'auto'}}/>
             </div>
             <div>
                 <div class="blocks">

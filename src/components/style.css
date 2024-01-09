@@ -327,7 +327,7 @@ form button:hover {
 }
 
 #details{
-    padding-right: 50px;
+    padding: 20px;
     text-align: left;
     background-color: #080324;
     background-color:#050a30;
@@ -335,6 +335,13 @@ form button:hover {
 
 }
 
+.download-app{
+    border: 2px solid white;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+}
 #details h3{
     color: #080324;
 }
