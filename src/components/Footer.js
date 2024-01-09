@@ -3,7 +3,6 @@ import { Row,Col } from 'react-bootstrap';
 import './style.css';
 import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone} from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import { Image } from 'react-bootstrap-icons';
 import { GooglePlay,Apple } from 'react-bootstrap-icons';
 
 export default function Footer() {
