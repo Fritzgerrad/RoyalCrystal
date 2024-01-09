@@ -146,7 +146,6 @@ body {
 }
 
 #sign-up{
-    background-color: #0056b3;
     color: #ffffff;
 }
 
@@ -331,7 +330,7 @@ form button:hover {
     padding-right: 50px;
     text-align: left;
     background-color: #080324;
-    background-color: gray;
+    background-color:#050a30;
     color: #fff;
 
 }
@@ -403,6 +402,8 @@ footer a:hover{
 .final-links{
     display: flex;
     margin: 10px;
+    color:#050a30;
+    
 }
 
 .floor{
@@ -423,13 +424,21 @@ footer a:hover{
 }
 
 .contact-us-logos{
-    color:grey;
+    color:#050a30;
     margin-right: 20px;
 }
 
 .whyUsCard{
     margin: 40px 0;
 }
+
+#whyUsInnerCard{
+    background-color:#d7b236;
+    width: 18rem;
+    height:23rem;
+}
+
+
 
 .footer-link{
     color:#f9f9f9

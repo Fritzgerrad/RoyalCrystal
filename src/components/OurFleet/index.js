@@ -6,7 +6,7 @@ import bus4 from '../../Assets/images/bus4.jpeg'
 import bus5 from '../../Assets/images/bus5.jpeg'
 import bus6 from '../../Assets/images/bus6.jpeg'
 import bus7 from '../../Assets/images/bus7.jpeg'
-import AppBar from '../AppBar';
+import Header from '../Header';
 import Footer from '../Footer';
 import { Col, Row } from 'react-bootstrap';
 import FleetCar from './FleetCar';
@@ -14,7 +14,7 @@ import FleetCar from './FleetCar';
 export default function OurFleet() {
   return (
     <div>
-      <AppBar />
+      <Header />
       <div style={{margin:"12px"}}>
         <h1 style={{fontWeight:"bold"}}>Our Fleet</h1>
       </div>

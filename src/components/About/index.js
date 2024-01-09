@@ -1,12 +1,12 @@
 import React from 'react'
-import AppBar from '../AppBar'
+import Header from '../Header'
 import Footer from '../Footer'
 import AboutUs from './AboutUs'
 
 export default function About() {
   return (
     <div>
-        <AppBar />
+        <Header page='about' />
         <AboutUs />
         <Footer />
     </div>

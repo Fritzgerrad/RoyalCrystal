@@ -1,5 +1,5 @@
 import React from 'react';
-import AppBar from '../AppBar';
+import Header from '../Header';
 import Footer from '../Footer'
 import Intro from './intro';
 import OurServices from './ourServices';
@@ -8,7 +8,7 @@ import WhyUs from './WhyUs';
 export default function Home() {
   return (
     <div>
-        <AppBar />
+        <Header />
         <Intro />
         <WhyUs />
         <OurServices />

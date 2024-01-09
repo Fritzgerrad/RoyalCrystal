@@ -1,12 +1,12 @@
 import React from 'react'
-import AppBar from './AppBar'
+import Header from './Header'
 import Footer from './Footer';
 import { Button } from 'react-bootstrap';
 
 export default function Contact() {
   return (
     <div>
-        <AppBar />
+        <Header />
         <section id="main-content" style={{marginTop:"20px"}}>
             <h1 style={{fontWeight:'bold'}}>Contact Us</h1>
             <p>Have questions or need more information? Feel free to reach out to us.</p>

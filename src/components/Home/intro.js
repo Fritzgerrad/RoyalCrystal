@@ -4,7 +4,7 @@ import mainLogo from '../../Assets/images/logo.png'
 import nemtDriver from '../../Assets/images/nemtdriver.jpeg'
 export default function Intro() {
   return (
-    <div>
+    <div style={{backgroundColor:'#4103fc'}}>
         <section id="intro" class="blocks" className="intro" style={{marginTop: "30px;"}}>
         <div class="blocks">
             <div>
@@ -12,18 +12,20 @@ export default function Intro() {
             </div>
             <div>
                 <div class="blocks">
-                    <div>
+                    {/* <div>
                         <Image src={mainLogo} />
-                    </div>
-                    <div>
-                        <h1>Royal Crystal</h1>
-                        <h2>Non-Emergency Medical Transport Services</h2>
+                    </div> */}
+                    <div >
+                        <h1 style={{fontWeight:'bold',fontSize:'659%',color:'#050a30'}}>Royal Crystal</h1>
+                        <h2 style={{color:'#050a30'}}>Non-Emergency Medical Transport Services</h2>
                         
                     </div>
                 </div> 
                 <div>
                     <p>
-                        Welcome to Royal Crystal NEMT, your premier choice for non-emergency medical transportation. Our meticulously maintained fleet, affordable solutions, and commitment to punctuality set us apart. With professionally trained drivers and genuine care for our riders, we go beyond transportation, providing a reliable support system for your medical needs. Choose Royal Crystal NEMT for a safe, comfortable, and compassionate journey—where your well-being is our top priority. Experience the difference today.
+
+                        "Welcome to Royal Crystal NEMT – your premier choice for safe, affordable, and compassionate non-emergency medical transportation. Our well-maintained fleet, punctual service, and caring drivers prioritize your well-being. Experience the difference today!"
+
                     </p>
                 </div>
                 
