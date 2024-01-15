@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image} from 'react-bootstrap';
 // import mainLogo from '../../Assets/images/logo.png'
-import nemtDriver from '../../Assets/images/nemtdriver.jpeg'
+//import nemtDriver from '../../Assets/images/nemtdriver.jpeg'
 import nemtGuy from '../../Assets/images/NemtGuy.jpeg';
 export default function Intro() {
   return (
