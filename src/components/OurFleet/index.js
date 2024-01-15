@@ -14,7 +14,7 @@ import FleetCar from './FleetCar';
 export default function OurFleet() {
   return (
     <div>
-      <Header />
+      <Header page= "fleet"/>
       <div style={{margin:"12px"}}>
         <h1 style={{fontWeight:"bold"}}>Our Fleet</h1>
       </div>

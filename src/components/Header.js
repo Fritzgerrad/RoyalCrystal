@@ -7,9 +7,11 @@ import './style.css';
 function Header(props) {
     const [about, setAbout] = useState("#050a30");
     const [career, setCareer] = useState("#050a30");
-    const [login, setLogin] = useState("#050a30");
-    const [signup, setSignup] = useState("#050a30");
-    const [home,setHome] = useState("red")
+    // const [login, setLogin] = useState("#050a30");
+    // const [signup, setSignup] = useState("#050a30");
+    const [home,setHome] = useState("red");
+    const [contact, setContact] = useState("#050a30");
+    const [fleet, setFleet] = useState("#050a30");
 
 
     useEffect(() => {
@@ -17,32 +19,40 @@ function Header(props) {
         if (props.page === "about") {
             setAbout("red");
             setCareer("#050a30");
-            setLogin("#050a30");
-            setSignup("#050a30");
+            // setLogin("#050a30");
+            // setSignup("#050a30");
+            setContact("#050a30");
+            setFleet("#050a30");
             setHome('#050a30')
 
         } else if (props.page === "career") {
             setAbout("#050a30");
             setCareer("red");
-            setLogin("#050a30");
-            setSignup("#050a30");
-            setHome('#050a30')
+            // setLogin("#050a30");
+            // setSignup("#050a30");
+            setContact("#050a30");
+            setFleet("#050a30");
+            setHome('#050a30');
 
 
-        } else if (props.page === "login") {
+        } else if (props.page === "contact") {
             setAbout("#050a30");
             setCareer("#050a30");
-            setLogin("red");
-            setSignup("#050a30");
+            // setLogin("red");
+            // setSignup("#050a30");
+            setContact("red");
+            setFleet("#050a30");
             setHome('#050a30')
 
 
         } 
-        else if (props.page === "signup") {
+        else if (props.page === "fleet") {
         setAbout("#050a30");
         setCareer("#050a30");
-        setLogin("#050a30");
-        setSignup("#red");
+        // setLogin("#050a30");
+        // setSignup("#red");
+        setContact("#050a30");
+        setFleet("red");
         setHome('#050a30')
 
         }
@@ -50,8 +60,10 @@ function Header(props) {
             // Reset the colors if none of the pages match
             setAbout("#050a30");
             setCareer("#050a30");
-            setLogin("#050a30");
-            setSignup("#050a30");
+            // setLogin("#050a30");
+            // setSignup("#050a30");
+            setContact("#050a30");
+            setFleet("#050a30");
             setHome('red')
 
         }
@@ -69,25 +81,36 @@ function Header(props) {
             </div>
             <div id="left-header-buttons">
                 <div className="left-btn">
-                    <Link to={'/about'} className="btn" style={{ color: about }}>
-                        ABOUT
-                    </Link>
-                </div>
-                <div className="left-btn">
-                    <Link to={'/login'} className="btn" style={{ color: login }}>
-                        LOG IN
-                    </Link>
-                </div>
-                <div className="left-btn">
-                    <Link to={'/newCustomer'} className="btn" id="sign-up" style={{ backgroundColor: signup }}>
-                        Sign Up
-                    </Link>
-                </div>
-                <div className="left-btn">
                     <Link to={'/careerPage'} className="btn" style={{ color: career }}>
                         Careers
                     </Link>
                 </div>
+                <div className="left-btn">
+                    <Link to={'/about'} className="btn" style={{ color: about }}>
+                        ABOUT
+                    </Link>
+                </div>
+                {/* <div className="left-btn">
+                    <Link to={'/login'} className="btn" style={{ color: login }}>
+                        LOG IN
+                    </Link>
+                </div> */}
+                <div className="left-btn">
+                    <Link to={'/contact'} className="btn" style={{ color: contact }}>
+                        Contact Us
+                    </Link>
+                </div>
+                <div className="left-btn">
+                    <Link to={'/ourFleet'} className="btn" style={{ color: fleet }}>
+                        Our Fleet
+                    </Link>
+                </div>
+                {/* <div className="left-btn">
+                    <Link to={'/newCustomer'} className="btn" id="sign-up" style={{ backgroundColor: signup }}>
+                        Sign Up
+                    </Link>
+                </div> */}
+                
             </div>
         </div>
     );

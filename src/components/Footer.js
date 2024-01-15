@@ -31,21 +31,7 @@ export default function Footer() {
                     </div>
                   
                 </Col>
-                <Col class="detail-col">
-                <h4 style={{color:"white"}}>My Account</h4>
-                    <div className='footer-link'>
-                       <Link to={'/login'} className='btn'>
-                            Log in
-                        </Link> 
-                    </div>
-                    <div className='footer-link'>
-                        <Link to={'/newCustomer'} className='btn'>
-                            Sign Up
-                        </Link>
-                    </div>        
-                    
-                </Col>
-
+              
                 <Col class="detail-col" >
                     <h4 style={{color:"white"}}>Contact Us</h4>
                         <div className='footer-link'>
@@ -57,20 +43,7 @@ export default function Footer() {
                         </div>         
                     
                 </Col>
-                <Col>
-                    <h4>Download the App</h4>
-                    <a href='https://play.google.com/store/games?pli=1' >
-                        <div className='download-app'> 
-                        <GooglePlay fontSize='50px'/> Get it from Google PlayStore
-                        </div>
-                        </a><br />
-                    <a href='https://play.google.com/store/games?pli=1'>
-                    <div className='download-app'> 
-                        <Apple fontSize='50px'/> Get it from Apple Store
-                        </div>
-                        </a>
-
-                </Col>
+                
     </Row>
     <div >
     <Row style={{margin:"5px 0px 0px 0px"}}>

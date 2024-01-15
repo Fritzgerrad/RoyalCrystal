@@ -2,13 +2,14 @@ import React from 'react'
 import { Image} from 'react-bootstrap';
 // import mainLogo from '../../Assets/images/logo.png'
 import nemtDriver from '../../Assets/images/nemtdriver.jpeg'
+import nemtGuy from '../../Assets/images/NemtGuy.jpeg';
 export default function Intro() {
   return (
     <div style={{backgroundColor:'#4103fc'}}>
         <section id="intro" class="blocks" className="intro" style={{marginTop: "30px;"}}>
         <div class="blocks">
-            <div>
-                <Image src={nemtDriver} style={{height:"auto",width:'auto'}}/>
+            <div style={{width:'50%'}}>
+                <Image src={nemtGuy} style={{height:"20rem",width:'18rem'}}/>
             </div>
             <div>
                 <div class="blocks">
