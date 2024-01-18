@@ -8,7 +8,7 @@ import WhyUs from './WhyUs';
 export default function Home() {
   return (
     <div>
-        <Header />
+        <Header page="home"/>
         <Intro />
         <WhyUs />
         <OurServices />

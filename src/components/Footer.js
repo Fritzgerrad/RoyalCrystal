@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row,Col } from 'react-bootstrap';
 import './style.css';
-import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone} from '@mui/icons-material';
+import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone,Mail} from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 //import { GooglePlay,Apple } from 'react-bootstrap-icons';
 
@@ -20,8 +20,8 @@ export default function Footer() {
                             Career Page
                         </Link>
                     <div className='footer-link'>
-                        <Link to={'/newCustomer'} className='btn'>
-                            Meet the Founders
+                        <Link to={'/founders'} className='btn'>
+                            Meet the Founder
                         </Link>
                     </div>
                     <div className='footer-link'>
@@ -39,8 +39,11 @@ export default function Footer() {
                         </div>
 
                         <div className='footer-link' style={{margin:"10px 0"}}>
-                            <p style={{color:"white",fontSize:"12px"}}><Phone fontSize='small'/> +234 704 080 0644</p>
-                        </div>         
+                            <p style={{color:"white",fontSize:"12px"}}><Phone fontSize='small'/> +1 (770) 404 0973</p>
+                        </div> 
+                        <div className='footer-link' style={{margin:"10px 0"}}>
+                            <p style={{color:"white",fontSize:"12px"}}><Mail fontSize='small' style={{marginRight:"5px"}}/>info@royalcrystalnemt.com</p>
+                        </div>           
                     
                 </Col>
                 

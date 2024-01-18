@@ -9,7 +9,7 @@ function Header(props) {
     const [career, setCareer] = useState("#050a30");
     // const [login, setLogin] = useState("#050a30");
     // const [signup, setSignup] = useState("#050a30");
-    const [home,setHome] = useState("red");
+    const [home,setHome] = useState("#050a30");
     const [contact, setContact] = useState("#050a30");
     const [fleet, setFleet] = useState("#050a30");
 
@@ -56,7 +56,7 @@ function Header(props) {
         setHome('#050a30')
 
         }
-        else {
+        else if (props.page === "home"){
             // Reset the colors if none of the pages match
             setAbout("#050a30");
             setCareer("#050a30");
@@ -66,6 +66,15 @@ function Header(props) {
             setFleet("#050a30");
             setHome('red')
 
+        }
+        else{
+            setAbout("#050a30");
+            setCareer("#050a30");
+            // setLogin("#050a30");
+            // setSignup("#050a30");
+            setContact("#050a30");
+            setFleet("#050a30");
+            setHome('#050a30')
         }
     }, [props.page]);
 

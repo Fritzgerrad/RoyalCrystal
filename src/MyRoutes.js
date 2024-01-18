@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Services from "./components/Services";
 import Career from "./components/Careers";
 import OurFleet from "./components/OurFleet";
+import Founders from "./components/Founders";
 export default function MyRoutes() {
     return (
         <div>
@@ -43,12 +44,16 @@ export default function MyRoutes() {
             element={<Career />}
             />
             <Route 
-            path="services"
+            path="/services"
             element={<Services />}
             />
             <Route
-            path='ourFleet'
+            path='/ourFleet'
             element={<OurFleet />}
+            />
+            <Route
+            path='founders'
+            element={<Founders />}
             />
           </Routes>
         </Router>

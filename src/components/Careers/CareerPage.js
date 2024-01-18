@@ -19,6 +19,7 @@ const CareerPage = () => {
           roleName="Drivers" 
           roleDesc="We are looking for dedicated individuals to join our team as drivers. If you enjoy helping others and ensuring safe transportation to medical appointments, we want to hear from you." 
           image={driver}
+          applicationLink = "http://bit.ly/VehicleDriverApplication"
           />
         </Col>
 
@@ -27,6 +28,7 @@ const CareerPage = () => {
           roleName='Customer Service Representatives' 
           roleDesc="Join our customer service team to assist clients with their transportation needs. If you have excellent communication skills and a passion for providing exceptional service, we invite you to apply."
           image={customerService}
+          applicationLink = "https://bit.ly/CustomerRepApplication"
           />
         </Col>
 
@@ -35,6 +37,7 @@ const CareerPage = () => {
           roleName='Caretaker Positions' 
           roleDesc="Caretakers play a crucial role in ensuring the well-being of our passengers. If you have experience in caregiving and a compassionate attitude, consider joining us as a caretaker."
           image={carertaker}
+          applicationLink = "https://bit.ly/CaretakerApplication"
           />
         </Col>
       </Row>
