@@ -11,7 +11,6 @@ import comfortSilhouette from '../../Assets/images/7.png';
 import licensedSilhouette from '../../Assets/images/8.png';
 
 
-
 export default function WhyUs() {
   return (
     <div style={{backgroundColor:'#4103f', padding:'1%'}}>
@@ -19,7 +18,7 @@ export default function WhyUs() {
         <div>
             <Row style={{margin:"0 10px",padding:'10px 0'}}>
                 <Col className='whyUsCard'>
-                <Card border="info" style={{ width: '18rem',height:'23rem', backgroundColor:"#d7b236" }}>
+                <Card border="info" id='whyUsInnerCard'>
                         <Card.Body>
                             <Image src={businessMan} style={{height:'48px',width:'48px',margin:'8px'}}/>
                             <Card.Title>Trusted Professionals</Card.Title>
@@ -111,10 +110,7 @@ export default function WhyUs() {
                     </Card>
                 </Col>
             </Row>
-            
-
         </div>
-
     </div>
   )
 }

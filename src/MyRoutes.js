@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import Career from "./components/Careers";
 import OurFleet from "./components/OurFleet";
 import Founders from "./components/Founders";
+import BookARide from "./components/BookARide";
 export default function MyRoutes() {
     return (
         <div>
@@ -52,8 +53,12 @@ export default function MyRoutes() {
             element={<OurFleet />}
             />
             <Route
-            path='founders'
+            path='/founders'
             element={<Founders />}
+            />
+            <Route
+            path="/bookARide"
+            element={<BookARide />}
             />
           </Routes>
         </Router>

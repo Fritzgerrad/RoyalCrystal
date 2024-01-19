@@ -11,7 +11,7 @@ function Header(props) {
     // const [signup, setSignup] = useState("#050a30");
     const [home,setHome] = useState("#050a30");
     const [contact, setContact] = useState("#050a30");
-    const [fleet, setFleet] = useState("#050a30");
+    const [services, setServices] = useState("#050a30");
 
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function Header(props) {
             // setLogin("#050a30");
             // setSignup("#050a30");
             setContact("#050a30");
-            setFleet("#050a30");
+            setServices("#050a30");
             setHome('#050a30')
 
         } else if (props.page === "career") {
@@ -31,7 +31,7 @@ function Header(props) {
             // setLogin("#050a30");
             // setSignup("#050a30");
             setContact("#050a30");
-            setFleet("#050a30");
+            setServices("#050a30");
             setHome('#050a30');
 
 
@@ -41,18 +41,18 @@ function Header(props) {
             // setLogin("red");
             // setSignup("#050a30");
             setContact("red");
-            setFleet("#050a30");
+            setServices("#050a30");
             setHome('#050a30')
 
 
         } 
-        else if (props.page === "fleet") {
+        else if (props.page === "services") {
         setAbout("#050a30");
         setCareer("#050a30");
         // setLogin("#050a30");
         // setSignup("#red");
         setContact("#050a30");
-        setFleet("red");
+        setServices("red");
         setHome('#050a30')
 
         }
@@ -63,7 +63,7 @@ function Header(props) {
             // setLogin("#050a30");
             // setSignup("#050a30");
             setContact("#050a30");
-            setFleet("#050a30");
+            setServices("#050a30");
             setHome('red')
 
         }
@@ -73,7 +73,7 @@ function Header(props) {
             // setLogin("#050a30");
             // setSignup("#050a30");
             setContact("#050a30");
-            setFleet("#050a30");
+            setServices("#050a30");
             setHome('#050a30')
         }
     }, [props.page]);
@@ -88,7 +88,20 @@ function Header(props) {
                     HOME
                 </Link>
             </div>
+            {!props.booking && ( 
+                    <div>
+                    <Link to={'/bookARide'} className="btn" id="special-btn">
+                        Book a Ride
+                    </Link>
+                </div>
+                )}
+            
             <div id="left-header-buttons">
+                <div className="left-btn">
+                    <Link to={'/services'} className="btn" style={{ color: services }}>
+                        Services
+                    </Link>
+                </div>
                 <div className="left-btn">
                     <Link to={'/careerPage'} className="btn" style={{ color: career }}>
                         Careers
@@ -107,11 +120,6 @@ function Header(props) {
                 <div className="left-btn">
                     <Link to={'/contact'} className="btn" style={{ color: contact }}>
                         Contact Us
-                    </Link>
-                </div>
-                <div className="left-btn">
-                    <Link to={'/ourFleet'} className="btn" style={{ color: fleet }}>
-                        Our Fleet
                     </Link>
                 </div>
                 {/* <div className="left-btn">
