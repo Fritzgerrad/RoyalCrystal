@@ -3,8 +3,9 @@ import { Card,Image,Button } from 'react-bootstrap'
 export default function CareerCard(props) {
 
   return (
-    <div>
-        <Card border="info" style={{ width: '20rem',height:'25rem' }}>
+    <div style={{margin:'7px auto'}}>
+      
+        <Card border="info" style={{ width: '18rem',height:'25rem' }}>
             <Card.Body>
                 <Image src={props.image} style={{height:'90px',width:'90px',margin:'8px'}}/>
                 <Card.Title>{props.roleName}</Card.Title>

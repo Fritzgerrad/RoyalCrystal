@@ -39,8 +39,8 @@ const BookingForm = () => {
     <div>
       <Form onSubmit={handleBookingSubmit}>
         
-        <Card className='form-section' style={{margin:"50px 0",width:"fit-content",backgroundColor:'#f0f0ff'}}>
-        <h2 style={{fontWeight:'bold'}}>Book a Ride</h2>
+        <Card className='form-section' style={{margin:"3rem auto",width:"fit-content",backgroundColor:'#f0f0ff'}}>
+        <h2 style={{fontWeight:'bold',fontSize:'40px',textAlign:'center',margin:'10px'}}>Book a Ride</h2>
 
           <Row>
             <Col md={12} sm={10}>
@@ -95,7 +95,7 @@ const BookingForm = () => {
 
                 </Form.Control>
                 </FloatingLabel>
-              </Form.Group>
+              </Form.Group> 
           </Col>
         </Row>
         <Row>
@@ -263,7 +263,7 @@ const BookingForm = () => {
                 />
           </Col>
         </Row>
-        <Button type='submit' style={{width:'200px',marginTop:'30px'}}>Submit</Button>    
+        <Button type='submit' style={{width:'35%',height:'50px',margin:'30px auto',fontSize:'20px',fontWeight:'bold'}}>Book</Button>    
         </Card>
       </Form>
     </div>

@@ -8,8 +8,8 @@ export default function BookARide() {
   return (
     <div>
       <Header booking="true" />
-      <div style={{margin:"20px"}}>
-        <BookingForm />
+      <div style={{margin:"0 auto"}}>
+        <BookingForm style={{margin: "0 auto"}}/>
 
       </div>
       <Footer />

@@ -12,6 +12,8 @@ export default function Home() {
         <Intro />
         <WhyUs />
         <OurServices />
+        <hr/>
+        <h5 style={{margin:'30px'}}> Experience the difference today!!!</h5>
         <Footer />
     </div>
   )

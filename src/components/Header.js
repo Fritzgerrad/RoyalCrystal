@@ -13,6 +13,8 @@ function Header(props) {
     const [contact, setContact] = useState("#050a30");
     const [services, setServices] = useState("#050a30");
 
+    const font_size = "15px"
+
 
     useEffect(() => {
         // Use the props to determine which link is active and update the state accordingly
@@ -80,17 +82,17 @@ function Header(props) {
 
     return (
         <div id="header">
-            <div style={{ padding: "0 30px" }}>
+            <div style={{ padding: "0 15px" }}>
                 <Image src={headerLogo} height={"40"} />
             </div>
             <div className="right-header-buttons">
-                <Link to={'/'} className="btn" style={{color: home}}>
+                <Link to={'/'} className="btn" style={{color: home,fontSize:font_size}}>
                     HOME
                 </Link>
             </div>
             {!props.booking && ( 
                     <div>
-                    <Link to={'/bookARide'} className="btn" id="special-btn">
+                    <Link to={'/bookARide'} className="btn" id="special-btn" style={{fontSize:font_size}}>
                         Book a Ride
                     </Link>
                 </div>
@@ -98,17 +100,17 @@ function Header(props) {
             
             <div id="left-header-buttons">
                 <div className="left-btn">
-                    <Link to={'/services'} className="btn" style={{ color: services }}>
+                    <Link to={'/services'} className="btn" style={{ color: services,fontSize: font_size }}>
                         Services
                     </Link>
                 </div>
                 <div className="left-btn">
-                    <Link to={'/careerPage'} className="btn" style={{ color: career }}>
+                    <Link to={'/careerPage'} className="btn" style={{ color: career,fontSize:font_size }}>
                         Careers
                     </Link>
                 </div>
                 <div className="left-btn">
-                    <Link to={'/about'} className="btn" style={{ color: about }}>
+                    <Link to={'/about'} className="btn" style={{ color: about,fontSize:font_size }}>
                         ABOUT
                     </Link>
                 </div>
@@ -118,7 +120,7 @@ function Header(props) {
                     </Link>
                 </div> */}
                 <div className="left-btn">
-                    <Link to={'/contact'} className="btn" style={{ color: contact }}>
+                    <Link to={'/contact'} className="btn" style={{ color: contact,fontSize:font_size }}>
                         Contact Us
                     </Link>
                 </div>

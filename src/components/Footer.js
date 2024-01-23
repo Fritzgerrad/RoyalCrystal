@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <div className='floor'>
-        <Row id="details">
+        <div id="details" className='blocks'>
                 <Col class="detail-col">
                 <h4 style={{color:"white"}}>Company</h4>
                     <div className='footer-link'>
@@ -47,11 +47,11 @@ export default function Footer() {
                     
                 </Col>
                 
-    </Row>
+    </div>
     <div >
-    <Row style={{margin:"5px 0px 0px 0px"}}>
+    <div style={{margin:"5px 0px 0px 0px"}}>
       
-        <Row>
+        <div>
             
             <Col>
                 
@@ -72,10 +72,10 @@ export default function Footer() {
                 </a>
 
             </Col>
-        </Row>
+        </div>
         
-    </Row>
-    <Row>
+    </div>
+    <div>
         <div className="final-links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="term.html"> Terms of Use</a>
@@ -84,7 +84,7 @@ export default function Footer() {
             <p >&#169; 2023 FRZ Group</p>
 
         </div>
-    </Row>
+    </div>
     </div>
       
     </div>
