@@ -152,11 +152,11 @@ body {
 
 #special-btn{
     color: #ffffff;
+    background-color: #4c88c9;
+    width: fit-content;
+
 }
 
-#special-btn{
-    background-color: #4c88c9;
-}
 
 body {
     padding-top: 40px;

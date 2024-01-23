@@ -29,6 +29,11 @@ export default function Footer() {
                             Our Fleet
                         </Link>
                     </div>
+                    <div>
+                    <Link to={'/bookARide'} className="btn">
+                        Book a Ride
+                    </Link>
+                    </div>
                   
                 </Col>
               

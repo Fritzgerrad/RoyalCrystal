@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div style={{margin:"20px"}}>
       <section id="about-nemt">
         <h2 style={{fontSize:"50px", fontWeight:'bold',marginTop:"30px"}}>About Us</h2>
         <p>

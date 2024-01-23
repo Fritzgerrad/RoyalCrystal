@@ -25,7 +25,7 @@ export default function Intro() {
                         
                     </div>
                 </div> 
-                <Col md={12} sm={12} xs={4} lg={12} xl={12}>
+                <Col md={12} sm={12} xs={12} lg={12} xl={12}>
                     <p style={{fontSize:'1.5vw',margin:'15px'}}>
 
                         "Welcome to Royal Crystal NEMT – your premier choice for non-emergency medical transportation. At Royal Crystal, we prioritize your well-being with safe, affordable, and compassionate transportation. Our well-maintained fleet, punctual service and caring drivers ensure a comfortable journey for you or your loved ones."
