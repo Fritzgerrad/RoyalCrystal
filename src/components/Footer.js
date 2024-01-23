@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row,Col } from 'react-bootstrap';
+import {Col } from 'react-bootstrap';
 import './style.css';
 import {Instagram,Twitter,Facebook,LinkedIn,LocationOn,Phone,Mail} from '@mui/icons-material';
 import { Link } from 'react-router-dom';
