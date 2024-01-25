@@ -60,15 +60,15 @@ export default function Footer() {
             
             <Col>
                 
-                <a style={{marginLeft:'9px'}}href='https://www.x.com' target="_blank" rel="noopener noreferrer"b>
+                <a style={{marginLeft:'9px'}}href='https://twitter.com/RylCrysNEMT' target="_blank" rel="noopener noreferrer"b>
                     <Twitter fontSize="medium" className='contact-us-logos'/>
                 </a>
           
-                <a href='https://www.facebook.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.facebook.com/profile.php?id=61555958277041' target="_blank" rel="noopener noreferrer">
                     <Facebook fontSize="medium" className='contact-us-logos'/>
                 </a>
            
-                <a href='https://www.instagram.com' target="_blank" rel="noopener noreferrer">
+                <a href='https://www.instagram.com/royalcrystalnemt/' target="_blank" rel="noopener noreferrer">
                     <Instagram fontSize="medium" className='contact-us-logos'/>
                 </a>
 

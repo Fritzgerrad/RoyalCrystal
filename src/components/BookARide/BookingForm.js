@@ -9,10 +9,8 @@ const BookingForm = () => {
     trip:'',
     phone: '',
     email: '',
-    pickupDate: '',
-    pickupTime: '',
-    dropoffTime: '',
-    dropoffDate: '',
+    date: '',
+    time: '',
     pickupLocation: '',
     dropoffLocation: '',
     additionalDetails: '',
@@ -21,14 +19,35 @@ const BookingForm = () => {
   // Function to handle form submission
   const handleBookingSubmit = (event) => {
     event.preventDefault();
-
     // Add logic to handle the booking submission (e.g., send data to a server)
-    console.log('Booking details submitted:', bookingDetails);
+    // console.log(bookingDetails);
+    // const url = "http://localhost:8080/book"
+
+    // fetch(url, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(bookingDetails),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log('Success:', data);
+    //     // Handle success, update UI, etc.
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error:', error);
+    //     // Handle error, update UI, show error message, etc.
+    //   });
+    alert('Booking details submitted', bookingDetails);
+
   };
+
 
   // Function to handle changes in form fields
   const handleInputChange = (event) => {
     const { name, value } = event.target;
+    // console.log(bookingDetails);
     setBookingDetails((prevDetails) => ({
       ...prevDetails,
       [name]: value,
@@ -141,7 +160,6 @@ const BookingForm = () => {
         <div className='blocks'>
           <Col>
             <Row>
-              <h5 style={{fontWeight:'bold'}}>PICK UP</h5>
               <Col md={6} sm={6}>
                 <Form.Group controlId="exampleForm.ControlInput1">
                 <FloatingLabel controlId="dateInput" label="DATE">
@@ -149,10 +167,8 @@ const BookingForm = () => {
                   <Form.Control
                   required
                   type="date"
-                  name="pickupDate"
+                  name="date"
                   onChange={handleInputChange}
-            
-
                   />
                 </FloatingLabel>
                 </Form.Group>
@@ -166,8 +182,8 @@ const BookingForm = () => {
                   required
                   type="time"
                   placeholder="Enter Time"
-                  name="pickupTime"
-                  onChange={handleBookingSubmit}
+                  name="time"
+                  onChange={handleInputChange}
                   />
                   </FloatingLabel>
                 </Form.Group>
@@ -176,81 +192,46 @@ const BookingForm = () => {
               
           </Col>
           
-          <Col>
-            <Row>
-              <h5 style={{fontWeight:'bold'}}>DROP OFF</h5>
-              <Col md={6} sm={6}>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                <FloatingLabel controlId="dateInput" label="DATE">
-
-                  <Form.Control
-                  required
-                  type="date"
-                  name="dropoffDate"
-                  onChange={handleInputChange}
-            
-
-                  />
-                </FloatingLabel>
-                </Form.Group>
-              </Col>
-              <Col md={4} sm={4}>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                {/* <Form.Label>Time:</Form.Label> */}
-                <FloatingLabel controlId="timeInput" label="TIME">
-
-                  <Form.Control
-                  required
-                  type="time"
-                  placeholder="Enter Time"
-                  name="dropoffTime"
-                  onChange={handleBookingSubmit}
-                  />
-                  </FloatingLabel>
-                </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              
-            </Row>
-          </Col>
-
         </div>
         <Row>
-        <Col md={6} sm={6}>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                  {/* <Form.Label>Pickup Location</Form.Label> */}
-                  <FloatingLabel controlId="floatingInput" label="ADDRESS" className="mb-3">
-                  <Form.Control
-                  required
-                  type="text"
-                  name="pickupLocation"
-                  placeholder='ADDRESS'
-                  onChange={handleInputChange}
-                  value={bookingDetails.pickupLocation}
-                  />
-                  </FloatingLabel>
-              </Form.Group>
-              </Col>
-              <Col md={6} sm={6}>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                  {/* <Form.Label>Pickup Location</Form.Label> */}
-                  <FloatingLabel controlId="floatingInput" label="ADDRESS" className="mb-3">
-                  <Form.Control
-                  required
-                  type="text"
-                  name="dropoffLocation"
-                  onChange={handleInputChange}
-                  placeholder='ADDRESS'
-                  value={bookingDetails.dropoffLocation}
-                  />
-                  </FloatingLabel>
-              </Form.Group>
-              </Col>
+          <Col md={6} sm={5}>
+            <Form.Group controlId="exampleForm.ControlInput1">
+            <FloatingLabel
+              controlId="floatingInput"
+              label="PICKUP LOCATION"
+              className="mb-3"
+            >
+                {/* <Form.Label>Pickup Location</Form.Label> */}
+                <Form.Control
+                required
+                type="text"
+                placeholder="PICKUP LOCATION"
+                name="pickupLocation"
+                onChange={handleInputChange}
+                />
+              </FloatingLabel>
+            </Form.Group>
+          </Col>
+          <Col md={6} sm={5}>
+            <Form.Group controlId="exampleForm.ControlInput1">
+            <FloatingLabel
+              controlId="floatingInput"
+              label="DROP OFF LOCATION"
+              className="mb-3"
+            >
+                {/* <Form.Label>Drop-off Location</Form.Label> */}
+                <Form.Control
+                required
+                type="text"
+                name="dropoffLocation"
+                placeholder='DROP OFF LOCATION'
+                onChange={handleInputChange}
+                />
+                </FloatingLabel>
+            </Form.Group>
+          </Col>
         </Row>
-        <Row>
-          
-        </Row>
+        
         <Row>
           <Col md={12} sm={10}>
           <Form.Control
