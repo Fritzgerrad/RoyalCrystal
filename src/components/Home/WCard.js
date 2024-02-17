@@ -5,7 +5,7 @@ function WCard(props) {
   return (
       <Col>
         <Card border="info" id='whyUsInnerCard'>
-            <Card.Body className='border border-primary'>
+            <Card.Body>
                 <Image src={props.image} style={{height:'3em',width:'4em',margin:'8px'}}/>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text style={{fontSize:"1em"}}>{props.desc}</Card.Text>
