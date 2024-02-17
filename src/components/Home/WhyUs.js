@@ -12,9 +12,9 @@ import WCard from './WCard';
 
 export default function WhyUs() {
   return (
-    <div style={{backgroundColor:'#4103f', padding:'1%'}}>
-      <h1 style={{fontWeight:'bold',color:'#050a30',fontSize:'3.3vw',textAlign:'center'}}>The Non Emergency Transport Company You Can Trust</h1>
-            <div className ="blocks2" style={{margin:"0 auto",padding:'auto'}}>
+    <div style={{backgroundColor:'#4103f'}}>
+      <h1 style={{fontWeight:'bold',color:'#050a30',fontSize:'3.3vw'}}>The Non Emergency Transport Company You Can Trust</h1>
+            <div className ="d-flex flex-wrap border border-primary">
 
                 <WCard
                     title="Trusted Professionals" 
